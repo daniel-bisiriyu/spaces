@@ -1,9 +1,10 @@
 // import logo from "./logo.svg";
 // import './App.css';
-import Navigation from "./components/Navigation";
+import AppHome from "./views/Home";
+import "./styles/utilities.css";
 
 function App() {
-  return <Navigation />;
+  return <AppHome />;
 }
 
 export default App;

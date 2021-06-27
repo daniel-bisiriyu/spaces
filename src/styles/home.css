@@ -1,0 +1,9 @@
+.top-navigation {
+  display: flex;
+  padding: 1rem;
+}
+
+.location-select {
+  display: flex;
+  align-items: center;
+}

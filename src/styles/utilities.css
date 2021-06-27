@@ -1,0 +1,237 @@
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+.p-2 {
+  padding: 0.75rem;
+}
+.p-3 {
+  padding: 1rem;
+}
+.p-4 {
+  padding: 1.5rem;
+}
+.p-5 {
+  padding: 1.75rem;
+}
+.p-6 {
+  padding: 2rem;
+}
+.p-7 {
+  padding: 2.5rem;
+}
+.p-8 {
+  padding: 3rem;
+}
+.p-9 {
+  padding: 3.5rem;
+}
+.p-10 {
+  padding: 4rem;
+}
+.p-11 {
+  padding: 5rem;
+}
+.p-12 {
+  padding: 6rem;
+}
+
+.px-1 {
+  padding: 0.5rem;
+}
+.px-2 {
+  padding: 0 0.75rem;
+}
+.px-3 {
+  padding: 0 1rem;
+}
+.px-4 {
+  padding: 0 1.5rem;
+}
+.px-5 {
+  padding: 0 1.75rem;
+}
+.px-6 {
+  padding: 0 2rem;
+}
+.px-7 {
+  padding: 0 2.5rem;
+}
+.px-8 {
+  padding: 0 3rem;
+}
+.px-9 {
+  padding: 0 3.5rem;
+}
+.px-10 {
+  padding: 0 4rem;
+}
+.px-11 {
+  padding: 0 5rem;
+}
+.px-12 {
+  padding: 0 6rem;
+}
+
+.py-1 {
+  padding: 0.5rem 0;
+}
+.py-2 {
+  padding: 0.75rem 0;
+}
+.py-3 {
+  padding: 1rem 0;
+}
+.py-4 {
+  padding: 1.5rem 0;
+}
+.py-5 {
+  padding: 1.75rem 0;
+}
+.py-6 {
+  padding: 2rem 0;
+}
+.py-7 {
+  padding: 2.5rem 0;
+}
+.py-8 {
+  padding: 3rem 0;
+}
+.py-9 {
+  padding: 3.5rem 0;
+}
+.py-10 {
+  padding: 4rem 0;
+}
+.py-11 {
+  padding: 5rem 0;
+}
+.py-12 {
+  padding: 6rem 0;
+}
+
+.m-1 {
+  margin: 0.5rem;
+}
+.m-2 {
+  margin: 0.75rem;
+}
+.m-3 {
+  margin: 1rem;
+}
+.m-4 {
+  margin: 1.5rem;
+}
+.m-5 {
+  margin: 1.75rem;
+}
+.m-6 {
+  margin: 2rem;
+}
+.m-7 {
+  margin: 2.5rem;
+}
+.m-8 {
+  margin: 3rem;
+}
+.m-9 {
+  margin: 3.5rem;
+}
+.m-10 {
+  margin: 4rem;
+}
+.m-11 {
+  margin: 5rem;
+}
+.m-12 {
+  margin: 6rem;
+}
+
+.mx-1 {
+  padding: 0 0.5rem;
+}
+.mx-2 {
+  padding: 0 0.75rem;
+}
+.mx-3 {
+  padding: 0 1rem;
+}
+.mx-4 {
+  padding: 0 1.5rem;
+}
+.mx-5 {
+  padding: 0 1.75rem;
+}
+.mx-6 {
+  padding: 0 2rem;
+}
+.mx-7 {
+  padding: 0 2.5rem;
+}
+.mx-8 {
+  padding: 0 3rem;
+}
+.mx-9 {
+  padding: 0 3.5rem;
+}
+.mx-10 {
+  padding: 0 4rem;
+}
+.mx-11 {
+  padding: 0 5rem;
+}
+.mx-12 {
+  padding: 0 6rem;
+}
+
+.my-1 {
+  padding: 0.5rem 0;
+}
+.my-2 {
+  padding: 0.75rem 0;
+}
+.my-3 {
+  padding: 1rem 0;
+}
+.my-4 {
+  padding: 1.5rem 0;
+}
+.my-5 {
+  padding: 1.75rem 0;
+}
+.my-6 {
+  padding: 2rem 0;
+}
+.my-7 {
+  padding: 2.5rem 0;
+}
+.my-8 {
+  padding: 3rem 0;
+}
+.my-9 {
+  padding: 3.5rem 0;
+}
+.my-10 {
+  padding: 4rem 0;
+}
+.my-11 {
+  padding: 5rem 0;
+}
+.my-12 {
+  padding: 6rem 0;
+}
