@@ -52,77 +52,101 @@
 }
 
 .px-1 {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-2 {
-  padding: 0 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-3 {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .px-4 {
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .px-5 {
-  padding: 0 1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 .px-6 {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .px-7 {
-  padding: 0 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .px-8 {
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .px-9 {
-  padding: 0 3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 .px-10 {
-  padding: 0 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .px-11 {
-  padding: 0 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .px-12 {
-  padding: 0 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .py-1 {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .py-2 {
-  padding: 0.75rem 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .py-3 {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-4 {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .py-5 {
-  padding: 1.75rem 0;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 .py-6 {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-7 {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-8 {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .py-9 {
-  padding: 3.5rem 0;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .py-10 {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .py-11 {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .py-12 {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .m-1 {
@@ -163,75 +187,99 @@
 }
 
 .mx-1 {
-  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .mx-2 {
-  padding: 0 0.75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 .mx-3 {
-  padding: 0 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .mx-4 {
-  padding: 0 1.5rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 .mx-5 {
-  padding: 0 1.75rem;
+  margin-right: 1.75rem;
+  margin-left: 1.75rem;
 }
 .mx-6 {
-  padding: 0 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 .mx-7 {
-  padding: 0 2.5rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }
 .mx-8 {
-  padding: 0 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 .mx-9 {
-  padding: 0 3.5rem;
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
 }
 .mx-10 {
-  padding: 0 4rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 .mx-11 {
-  padding: 0 5rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 .mx-12 {
-  padding: 0 6rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
 }
 
 .my-1 {
-  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .my-2 {
-  padding: 0.75rem 0;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .my-3 {
-  padding: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .my-4 {
-  padding: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .my-5 {
-  padding: 1.75rem 0;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 .my-6 {
-  padding: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .my-7 {
-  padding: 2.5rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .my-8 {
-  padding: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .my-9 {
-  padding: 3.5rem 0;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .my-10 {
-  padding: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .my-11 {
-  padding: 5rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .my-12 {
-  padding: 6rem 0;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
