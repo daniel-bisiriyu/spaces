@@ -3,6 +3,7 @@ import TopNavigation from "../components/Cart/TopNavigation";
 import CartList from "../components/Cart/CartList";
 import CartCheckout from "../components/Cart/Checkout";
 import RecentlyViewed from "../components/Cart/RecentlyViewed";
+import { connect } from "react-redux";
 
 const Cart = () => {
   return (
@@ -15,4 +16,10 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+const mapState = (state) => {
+  return {
+    cartItems: state.cartItems,
+  };
+};
+
+export default connect(mapState)(Cart);

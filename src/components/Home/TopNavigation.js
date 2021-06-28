@@ -6,7 +6,7 @@ import "../../styles/top-navigation.css";
 
 const TopNavigation = () => {
   return (
-    <div className="top-navigation justify-between mx-3 py-3">
+    <div className="top-navigation justify-between py-3">
       <LocationSelect />
       <div className="flex items-center">
         <img src={ordersIcon} alt="location icon" />
