@@ -1,27 +1,29 @@
-export const addToCart = (payload) => {
+export const addToCart = (product) => {
+  console.log("action ");
+  console.log(product);
   return {
-    type: "add",
-    payload: payload,
+    type: "ADD_TO_CART",
+    payload: product,
   };
 };
 
-export const removeFromCart = (payload) => {
+export const removeFromCart = (id) => {
   return {
-    type: "remove",
-    payload: payload,
+    type: "REMOVE_FROM_CART",
+    id,
   };
 };
 
-export const incrementQuantity = (id) => {
+export const incrementQuantity = (index) => {
   return {
-    type: "increment",
-    payload: id,
+    type: "INCREMENT_QUANTITY",
+    index,
   };
 };
 
-export const decrementQuantity = (id) => {
+export const decrementQuantity = (index) => {
   return {
-    type: "decrement",
-    payload: id,
+    type: "DECREMENT_QUANTITY",
+    index: index,
   };
 };

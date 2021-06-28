@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import CartItem from "./CartItem";
 import productImage from "../../images/product-image.png";
+import { connect } from "react-redux";
+import {
+  decrementQuantity,
+  incrementQuantity,
+  removeFromCart,
+} from "../../actions";
 
 class CardList extends Component {
   constructor(props) {
@@ -20,14 +26,59 @@ class CardList extends Component {
       ],
     };
   }
+  componentDidMount() {
+    console.log("na the cart");
+    console.log(this.props.cartItems);
+  }
+
+  incrementQuantity(index) {
+    console.log("increment called");
+    this.props.incrementQuantity(index);
+  }
+  decrementQuantity(index) {
+    this.props.decrementQuantity(index);
+  }
+  removeFromCart(id) {
+    this.props.removeFromCart(id);
+  }
 
   render() {
     return (
       <div>
-        <CartItem product={this.state.cartItems[0]} />
+        {this.props.cartItems.map((product, index) => {
+          return (
+            <CartItem
+              key={product.id}
+              product={product}
+              incrementQuantity={() => this.incrementQuantity(index)}
+              decrementQuantity={() => this.decrementQuantity(index)}
+              removeFromCart={() => this.removeFromCart(product.id)}
+            />
+          );
+        })}
       </div>
     );
   }
 }
 
-export default CardList;
+const mapState = (state) => {
+  return {
+    cartItems: state.cartItems,
+  };
+};
+
+const mapDispatch = (dispatch) => {
+  return {
+    incrementQuantity: (index) => {
+      dispatch(incrementQuantity(index));
+    },
+    decrementQuantity: (index) => {
+      dispatch(decrementQuantity(index));
+    },
+    removeFromCart: (id) => {
+      dispatch(removeFromCart(id));
+    },
+  };
+};
+
+export default connect(mapState, mapDispatch)(CardList);

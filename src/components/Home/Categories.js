@@ -6,7 +6,7 @@ import shopsIcon from "../../icons/shops.svg";
 
 const Categories = () => {
   return (
-    <div className="categories mx-3 my-4">
+    <div className="categories my-4">
       <div className="category">
         <img src={productCategoriesIcon} alt="categories" />
         <p>Product categories</p>

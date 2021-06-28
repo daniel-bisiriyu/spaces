@@ -4,6 +4,8 @@ import ProductDetails from "../components/SingleProduct/ProductDetails";
 import productImage from "../images/product-image.png";
 import ProductDescription from "../components/SingleProduct/ProductDescription";
 import ProductReviews from "../components/SingleProduct/ProductReviews";
+import { connect } from "react-redux";
+import { addToCart } from "../actions";
 
 import "../styles/product.css";
 
@@ -23,16 +25,26 @@ class SingleProduct extends Component {
       },
     };
   }
+  componentDidMount() {
+    let productId = this.props.match.params.id;
+    console.log(productId);
+  }
+  addToCart = () => {
+    console.log("adding to cart");
+    this.props.addToCart(this.props.product);
+  };
   render() {
     return (
       <div className="mx-3">
         <TopNavigation />
-        <ProductDetails product={this.state.product} />
+        <ProductDetails product={this.props.product} />
         <ProductDescription />
         <ProductReviews />
         <div className="flex justify-between">
           <div>
-            <button className="checkout-button">Checkout</button>
+            <button className="checkout-button" onClick={this.addToCart}>
+              Add to cart
+            </button>
           </div>
           <div>
             <button className="wishlist-button">Wishlist</button>
@@ -43,4 +55,20 @@ class SingleProduct extends Component {
   }
 }
 
-export default SingleProduct;
+const mapState = (state, ownProps) => {
+  let productId = ownProps.match.params.id;
+  return {
+    product: state.products.find((product) => product.id === productId),
+  };
+};
+
+const mapDispatch = (dispatch) => {
+  return {
+    addToCart: (product) => {
+      // dispatch({ type: "ADD_TO_CART", payload: id });
+      dispatch(addToCart(product));
+    },
+  };
+};
+
+export default connect(mapState, mapDispatch)(SingleProduct);

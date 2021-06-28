@@ -12,15 +12,9 @@ function App() {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <AppHome />
-          </Route>
-          <Route exact path="/cart">
-            <Cart />
-          </Route>
-          <Route exact path="/product">
-            <SingleProduct />
-          </Route>
+          <Route exact path="/" component={AppHome} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/product/:id" component={SingleProduct} />
         </Switch>
       </BrowserRouter>
     </div>

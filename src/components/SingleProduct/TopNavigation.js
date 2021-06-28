@@ -1,6 +1,8 @@
 import React from "react";
 import backIcon from "../../icons/back.svg";
 import cartIcon from "../../icons/cart.svg";
+import { Link } from "react-router-dom";
+
 import "../../styles/top-navigation.css";
 
 const TopNavigation = () => {
@@ -13,7 +15,9 @@ const TopNavigation = () => {
         <p>Details</p>
       </div>
       <div>
-        <img src={cartIcon} alt="cart icon" />
+        <Link to="/cart">
+          <img src={cartIcon} alt="cart icon" />
+        </Link>
       </div>
     </div>
   );
