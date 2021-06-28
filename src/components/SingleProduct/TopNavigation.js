@@ -1,23 +1,22 @@
 import React from "react";
 import backIcon from "../../icons/back.svg";
-import cartIcon from "../../icons/cart.svg";
-import { Link } from "react-router-dom";
+import searchIcon from "../../icons/contracted-search.svg";
+import CartNotification from "../CartNotification";
 
 import "../../styles/top-navigation.css";
 
 const TopNavigation = () => {
   return (
-    <div className="product-navigation">
+    <div className="product-navigation px-3 py-1">
       <div>
         <img src={backIcon} alt="back icon" />
       </div>
       <div>
         <p>Details</p>
       </div>
-      <div>
-        <Link to="/cart">
-          <img src={cartIcon} alt="cart icon" />
-        </Link>
+      <div className="flex items-center">
+        <img src={searchIcon} alt="search icon" className="mx-2" />
+        <CartNotification />
       </div>
     </div>
   );

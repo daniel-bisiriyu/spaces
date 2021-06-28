@@ -44,7 +44,7 @@ class CardList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="px-3">
         {this.props.cartItems.map((product, index) => {
           return (
             <CartItem

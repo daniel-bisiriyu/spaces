@@ -10,7 +10,9 @@
 .product-details h2 {
   color: #212c3d;
 }
-
+.product-details {
+  margin-top: 5rem;
+}
 .product-details .name {
   font-size: 1rem;
 
@@ -30,6 +32,41 @@
   font-size: 1rem;
   font-weight: 500;
 }
+.product-description {
+  background: #ffffff;
+}
 .product-description img {
   transform: rotate(-90deg);
+}
+
+.product-reviews {
+  margin-top: 0.5rem;
+}
+
+.product-reviews p,
+.recently-viewed p {
+  color: #212c3d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.recently-viewed .view-all,
+.product-reviews .view-all {
+  color: #227eff;
+}
+
+.review-text {
+  color: #627483 !important;
+}
+
+.checkout-button {
+  background: #227eff;
+  color: #ffffff;
+  width: 45vw;
+}
+
+.wishlist-button {
+  background: #ffffff;
+  border: 2px solid #dcf0ff !important;
+  color: #2e4457;
+  width: 45vw;
 }

@@ -11,10 +11,10 @@ class ProductReviews extends Component {
 
   render() {
     return (
-      <div>
-        <div className="flex justify-between">
-          <h2>Review and Ratings</h2>
-          <h2>View All</h2>
+      <div className="bg-white mt-1 product-reviews px-3">
+        <div className="flex justify-between heading">
+          <p>Review and Ratings</p>
+          <p class="view-all">View All</p>
         </div>
         <SingleReview />
       </div>

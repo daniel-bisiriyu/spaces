@@ -10,17 +10,17 @@ class CartCheckout extends Component {
       priceTotal += Number(item.quantity) * Number(item.price);
     });
     return (
-      <div className="checkout">
-        <div className="flex justify-between">
+      <div className="checkout bg-white px-3 my-1">
+        <div className="flex justify-between sub-total">
           <p>Subtotal</p>
-          <p>N{priceTotal}.00</p>
+          <p> &#8358;{priceTotal}.00</p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between total">
           <p>Total</p>
-          <p>N{priceTotal}.00</p>
+          <p> &#8358;{priceTotal}.00</p>
         </div>
         <div>
-          <button className="checkout-button">Checkout</button>
+          <button className="checkout-button btn">Checkout</button>
         </div>
       </div>
     );

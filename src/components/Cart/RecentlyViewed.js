@@ -43,14 +43,16 @@ class RecentlyViewed extends Component {
 
   render() {
     return (
-      <div className="products ">
-        <div className="flex justify-between">
-          <p>Recently Viewed</p>
-          <p>View All</p>
+      <div className="recently-viewed px-3">
+        <div className="flex justify-between heading">
+          <p className="">Recently Viewed</p>
+          <p className="view-all">View All</p>
         </div>
-        {this.state.products.map((product) => {
-          return <ProductCard key={product.id} product={product} />;
-        })}
+        <div className="recently-viewed-products flex">
+          {this.state.products.map((product) => {
+            return <ProductCard key={product.id} product={product} />;
+          })}
+        </div>
       </div>
     );
   }

@@ -4,7 +4,7 @@ import SearchBar from "../components/Home/SearchBar";
 import Categories from "../components/Home/Categories";
 import ProductList from "../components/Home/ProductList";
 import BottomNavigation from "../components/BottomNavigation";
-import Carousel from "../components/Home/Carousel";
+// import Carousel from "../components/Home/Carousel";
 
 import { connect } from "react-redux";
 
