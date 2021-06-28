@@ -1,0 +1,35 @@
+.product-image {
+  text-align: center;
+}
+
+.product-image img {
+  /* width: 100%;
+  height: auto; */
+}
+
+.product-details h2 {
+  color: #212c3d;
+}
+
+.product-details .name {
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+.product-details p {
+  color: #627483;
+}
+
+.product-details .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.product-description p {
+  color: #212c3d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.product-description img {
+  transform: rotate(-90deg);
+}
