@@ -1,3 +1,16 @@
 p {
   font-size: 0.9rem;
 }
+
+.product-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-navigation {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
