@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import TopNavigation from "../components/SingleProduct/TopNavigation";
 import ProductDetails from "../components/SingleProduct/ProductDetails";
-import productImage from "../images/product-image.png";
 import ProductDescription from "../components/SingleProduct/ProductDescription";
 import ProductReviews from "../components/SingleProduct/ProductReviews";
+import Notification from "../components/Notification";
 import { connect } from "react-redux";
 import { addToCart } from "../actions";
 
@@ -13,41 +13,43 @@ class SingleProduct extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      product: {
-        id: "1234ads421egjdsc",
-        name: "NIKE Huararche 2019",
-        description:
-          "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
-        image: productImage,
-        price: "45,000 - 90,000",
-        location: "Lagos",
-        stock: 5,
-      },
+      itemAdded: false,
     };
   }
   componentDidMount() {
     let productId = this.props.match.params.id;
     console.log(productId);
   }
+  showAndHideNotification = () => {
+    this.setState({
+      itemAdded: true,
+    });
+    setTimeout(() => {
+      this.setState({
+        itemAdded: false,
+      });
+    }, 3000);
+  };
   addToCart = () => {
-    console.log("adding to cart");
+    this.showAndHideNotification();
     this.props.addToCart(this.props.product);
   };
   render() {
     return (
-      <div className="mx-3">
+      <div>
+        {this.state.itemAdded ? <Notification /> : ""}
         <TopNavigation />
         <ProductDetails product={this.props.product} />
         <ProductDescription />
         <ProductReviews />
-        <div className="flex justify-between">
+        <div className="flex justify-between px-3 py-2 bg-white mt-1">
           <div>
-            <button className="checkout-button" onClick={this.addToCart}>
+            <button className="checkout-button btn" onClick={this.addToCart}>
               Add to cart
             </button>
           </div>
           <div>
-            <button className="wishlist-button">Wishlist</button>
+            <button className="wishlist-button btn">Wishlist</button>
           </div>
         </div>
       </div>

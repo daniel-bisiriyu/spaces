@@ -15,6 +15,11 @@ class LocationSelect extends Component {
       <div className="location-select">
         <div className="flex items-center">
           <img src={location} alt="location icon" />
+          {/* <select onChange={this.props.filterByLocation}>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja</option>
+            <option value="ogun">Ogun</option>
+          </select> */}
           <p>Lagos</p>
           <img src={dropdownIcon} alt="dropdown icon" className="mx-1" />
         </div>

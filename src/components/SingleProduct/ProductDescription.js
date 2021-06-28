@@ -3,7 +3,7 @@ import dropdownIcon from "../../icons/dropdown.svg";
 
 const ProductDescription = () => {
   return (
-    <div className="flex justify-between items-center product-description">
+    <div className="flex justify-between items-center product-description px-3 py-1">
       <div>
         <p>Product Description</p>
       </div>

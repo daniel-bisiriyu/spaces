@@ -1,5 +1,9 @@
 .top-navigation {
   display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .location-select {
@@ -11,6 +15,7 @@
   display: flex;
   background: #edf2f7;
   border-radius: 4px;
+  margin-top: 6rem;
 }
 
 .search-bar input {
@@ -46,11 +51,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .products a {
   width: 30%;
-  padding: 0 0.35rem;
+  padding: 0 0.25rem;
   max-width: 30%;
 }
 
